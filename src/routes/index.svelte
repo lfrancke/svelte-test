@@ -3,8 +3,16 @@
 
 
 <script lang="ts">
-  import {Foo} from '$lib/test';
+  import {add} from '$lib/test';
+  let foo = add(1, 2);
 
-  let a: Foo = {bar: "bla"};
-  console.log(a);
+  let bar: Foo = {
+    bar: "bla"
+  }
+
+  console.log(bar)
+
 </script>
+
+{foo}
+{bar.bar}
