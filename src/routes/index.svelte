@@ -10,9 +10,18 @@
     bar: "bla"
   }
 
+  import type { Bar } from '$lib/test';
+
+  let bla: Bar = {
+    bar: "drniei"
+  }
+
+  console.log(bla)
+
   console.log(bar)
 
 </script>
 
 {foo}
 {bar.bar}
+{bla.bar}
